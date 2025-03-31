@@ -2,11 +2,7 @@
 
 Proyecto para instituto AIEP.
 
-Daniel Aguila
-
-Edgar Araya
-
-Luis Vilches
+Daniel Aguila - Edgar Araya - Luis Vilches
 
 Requisitos: 
 
