@@ -1,9 +1,13 @@
 # El faro periodico
 
-Proyecto para instituto AIEP
+Proyecto para instituto AIEP.
+
 Daniel Aguila
+
 Edgar Araya
+
 Luis Vilches
+
 Requisitos: 
 
 Sitio web 
