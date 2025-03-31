@@ -1,10 +1,12 @@
 # El faro periodico
 
 Proyecto para instituto AIEP
+Daniel Aguila
+Edgar Araya
+Luis Vilches
+Requisitos: 
 
-Respecto a los requisitos del PDF
-
-Sitio web cumple con los requisitos:
+Sitio web 
 
 ✅ Tiene una portada con el título "El Faro" y un logotipo
 
