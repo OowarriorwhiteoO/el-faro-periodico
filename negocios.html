@@ -1,129 +1,128 @@
-<!-- Página de noticias de negocios y emprendimientos del periódico "El Faro" -->
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <!-- Metadatos de la página -->
-    <title>El Faro - Negocios y Emprendimientos</title>
+    <title>El Faro - Negocios</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
-  <!-- Cuerpo de la página con fondo gris claro y texto oscuro -->
-  <body bgcolor="#f0f0f0" text="#333333">
-    <!-- Encabezado con logo y título -->
-    <header>
-      <center bgcolor="#e0e0e0">
+  <body>
+    <!-- Encabezado -->
+    <header class="bg-header">
+      <div class="text-center">
         <h1>Negocios y Emprendimientos - El Faro</h1>
         <img
-        src="img/Logo1.jpeg"
-        width="100"
-        alt="Logo de El Faro"
-        class="logo"
-      />
-    </center>
-    <center><a href="index.html">Volver al Inicio</a></center>
-  </header>
-  <hr />
+          src="img/Logo1.jpeg"
+          width="100"
+          alt="Logo de El Faro: faro sobre acantilado"
+          class="logo"
+        />
+      </div>
+      <!-- Menú de navegación -->
+      <nav class="neumorphic-menu">
+        <a href="index.html" class="neumorphic-button">Inicio</a>
+        <a href="general.html" class="neumorphic-button">Noticias</a>
+        <a href="deportes.html" class="neumorphic-button">Deportes</a>
+        <a href="negocios.html" class="neumorphic-button">Negocios</a>
+      </nav>
+    </header>
 
-    <!-- Artículo 1: Noticia sobre iniciativa BCI para emprendimiento femenino -->
-    <article><center>
-      <h2>
-        BCI lanza plan para potenciar el emprendimiento femenino enfocado en
-        sostenibilidad
-      </h2>
-      <p><strong>Fecha:</strong> Marzo 13, 2025</p>
-      <img
-        src="img/bci-emprendimiento.jpg"
-        alt="Presentación del programa BCI"
-        width="600"
-      />
-      <p>
-        El Banco de Crédito e Inversiones (BCI) ha anunciado una innovadora
-        iniciativa destinada a impulsar proyectos empresariales liderados por
-        mujeres que tengan un enfoque en la sostenibilidad y el impacto
-        ambiental positivo.
-      </p>
-      <p>Características del programa:</p>
-      <ul></center>
-        <li>Financiamiento preferencial para proyectos sostenibles</li>
-        <li>Mentorías especializadas en gestión empresarial</li>
-        <li>Red de contactos y apoyo entre emprendedoras</li>
-        <li>Workshops sobre sostenibilidad y negocios verdes</li>
-      </ul>
-      <p>
-        El programa busca cerrar la brecha de género en el emprendimiento
-        mientras promueve prácticas empresariales sostenibles.
-      </p>
-    </article>
+    <!-- Contenido principal -->
+    <main class="articles-container">
+      <!-- Artículo 1: BCI y emprendimiento femenino -->
+      <article>
+        <div class="text-center">
+          <h2>
+            BCI lanza plan para potenciar el emprendimiento femenino enfocado en
+            sostenibilidad
+          </h2>
+          <p><strong>Fecha:</strong> Marzo 13, 2025</p>
+          <img
+            src="img/bci-emprendimiento.jpg"
+            alt="Mujeres presentando proyecto empresarial sostenible"
+            class="article-img"
+          />
+          <p>
+            El Banco de Crédito e Inversiones (BCI) impulsa proyectos liderados
+            por mujeres con impacto ambiental positivo.
+          </p>
+        </div>
+        <h3>Características del programa:</h3>
+        <ul>
+          <li>Financiamiento preferencial para iniciativas verdes</li>
+          <li>Mentorías en gestión empresarial</li>
+          <li>Red de apoyo entre emprendedoras</li>
+          <li>Talleres sobre sostenibilidad</li>
+        </ul>
+      </article>
 
-    <hr />
+      <hr />
 
-    <!-- Artículo 2: Noticia sobre Smart Me y electromovilidad -->
-    <article><center>
-      <h2>Smart Me: el emprendimiento que apuesta por la electromovilidad</h2>
-      <p><strong>Fecha:</strong> Abril 09, 2021</p>
-      <img
-        src="img/smart-me.jpg"
-        alt="Vehículos eléctricos Smart Me"
-        width="600"
-      />
-      <p>
-        Smart Me, una startup chilena, está revolucionando el mercado de la
-        movilidad eléctrica con soluciones innovadoras y accesibles para el
-        transporte urbano.
-      </p>
-      <p>Aspectos destacados de la empresa:</p>
-      <ul></center>
-        <li>Desarrollo de scooters eléctricos de bajo costo</li>
-        <li>Red de estaciones de carga solar</li>
-        <li>Sistema de compartición de vehículos eléctricos</li>
-        <li>Tecnología de geolocalización y gestión de flota</li>
-      </ul>
-      <p>
-        La empresa proyecta expandirse a otras ciudades de Latinoamérica en los
-        próximos meses.
-      </p>
-    </article>
+      <!-- Artículo 2: Smart Me y electromovilidad -->
+      <article>
+        <div class="text-center">
+          <h2>
+            Smart Me: el emprendimiento que apuesta por la electromovilidad
+          </h2>
+          <p><strong>Fecha:</strong> Abril 9, 2025</p>
+          <img
+            src="img/smart-me.jpg"
+            alt="Scooter eléctrico de Smart Me en ciudad"
+            class="article-img"
+          />
+          <p>
+            Startup chilena revoluciona el transporte urbano con vehículos
+            eléctricos asequibles y estaciones de carga solar.
+          </p>
+        </div>
+        <h3>Innovaciones clave:</h3>
+        <ul>
+          <li>Scooters eléctricos de bajo costo</li>
+          <li>Sistema de compartir vehículos</li>
+          <li>Tecnología de geolocalización</li>
+          <li>Expansión a Latinoamérica en 2026</li>
+        </ul>
+      </article>
 
-    <hr />
+      <hr />
 
-    <!-- Artículo 3: Noticia sobre fondo concursable para proyectos comunitarios -->
-    <article><center>
-      <h2>
-        Lanzan fondo concursable para apoyar económicamente a proyectos
-        colaborativos y comunitarios
-      </h2>
-      <p><strong>Fecha:</strong> Mayo 06, 2021</p>
-      <img
-        src="img/fondo-comunitario.jpg"
-        alt="Presentación del fondo concursable"
-        width="600"
-      />
-      <p>
-        Una nueva iniciativa busca fortalecer el desarrollo local a través del
-        apoyo financiero a proyectos que fomenten la colaboración y el
-        desarrollo comunitario.
-      </p>
-      <p>Detalles del fondo:</p>
-      <ul></center>
-        <li>Financiamiento de hasta $10 millones por proyecto</li>
-        <li>Enfoque en iniciativas de impacto social</li>
-        <li>Prioridad a proyectos sostenibles</li>
-        <li>Apoyo técnico durante la implementación</li>
-      </ul>
-      <p>
-        Las postulaciones están abiertas hasta el 30 de junio de 2025 y se
-        espera beneficiar a más de 50 proyectos en todo el país.
-      </p>
-    </article>
+      <!-- Artículo 3: Fondo comunitario -->
+      <article>
+        <div class="text-center">
+          <h2>Lanzan fondo concursable para proyectos colaborativos</h2>
+          <p><strong>Fecha:</strong> Mayo 6, 2025</p>
+          <img
+            src="img/fondo-comunitario.jpg"
+            alt="Grupo de personas planificando proyecto comunitario"
+            class="article-img"
+          />
+          <p>
+            Iniciativa financiará hasta $10 millones por proyecto para impulsar
+            el desarrollo local sostenible.
+          </p>
+        </div>
+        <h3>Detalles del fondo:</h3>
+        <ul>
+          <li>Prioridad a proyectos sociales y ecológicos</li>
+          <li>Apoyo técnico durante la ejecución</li>
+          <li>Postulaciones abiertas hasta junio 2025</li>
+          <li>50 proyectos beneficiados a nivel nacional</li>
+        </ul>
+      </article>
+    </main>
 
-    <hr />
-
-    <!-- Pie de página con enlaces y derechos de autor -->
-    <footer bgcolor="#e0e0e0">
-      <center>
-        <a href="index.html">Volver al Inicio</a>
+    <!-- Pie de página -->
+    <footer class="bg-footer">
+      <div class="text-center">
+        <button
+          class="button"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+          Arriba
+        </button>
         <h4>Periódico "El Faro"</h4>
-        <h5>Todos los derechos reservados Periódico "El Faro" 2025</h5>
-      </center>
+        <h5>© 2025 Todos los derechos reservados</h5>
+      </div>
     </footer>
   </body>
 </html>
