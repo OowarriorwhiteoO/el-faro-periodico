@@ -1,11 +1,9 @@
-/* =========================================
-   CSS para "El Faro" - Versión Corregida
-   ========================================= */
+/*CSS para "El Faro"*/
 
-/* --- Fuente Externa (Google Fonts) --- */
+/*Fuente Externa (Google Fonts)*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* --- Reset y Configuración Global --- */
+/*Reset y Configuración Global*/
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +11,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* --- Colores y Fondos --- */
+/*Colores y Fondos*/
 body {
     background-color: #f5f5f5; /* Fondo gris solicitado */
     color: #333;
@@ -43,7 +41,7 @@ body {
     margin: 1rem 0;
 }
 
-/* --- Menú Neumórfico --- */
+/*Menú Neumórfico*/
 .neumorphic-menu {
     display: flex;
     justify-content: center;
@@ -76,26 +74,38 @@ body {
     color: #6a0dad;
 }
 
-/* --- Grilla de Artículos (Responsiva) --- */
+/*Grilla de Artículos (Responsiva)*/
 .articles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     padding: 1.5rem;
 }
-
+/* Estilos para los artículos: */
 article {
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    text-decoration: none; 
 }
 
 article:hover {
     background-color: #000;
     color: white;
     transform: translateY(-5px);
+    text-decoration: none; /* Elimina subrayado en hover */
+}
+
+/* Nuevas reglas para enlaces dentro de artículos */
+article a {
+    text-decoration: underline;
+}
+
+article a:hover {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 article img {
@@ -106,7 +116,7 @@ article img {
     margin-bottom: 1rem;
 }
 
-/* --- Estilos de Tipografía --- */
+/*Estilos de Tipografía*/
 h1, h2, h3, h4, h5 {
     margin: 1rem 0;
 }
@@ -126,7 +136,7 @@ h3 {
     color: #6a0dad;
 }
 
-/* --- Multimedia y Podcast --- */
+/*Multimedia y Podcast*/
 iframe {
     width: 100%;
     max-width: 560px;
@@ -141,7 +151,7 @@ audio {
     margin: 1rem 0;
 }
 
-/* --- Botón "Arriba" --- */
+/*Botón "Arriba"*/
 .button {
     padding: 0.8rem 2rem;
     background-color: transparent;
@@ -159,7 +169,7 @@ audio {
     color: white;
 }
 
-/* --- Responsividad (Móviles) --- */
+/*Responsividad (celulares)*/
 @media (max-width: 768px) {
     .articles {
         grid-template-columns: 1fr;
@@ -180,7 +190,5 @@ audio {
         font-size: 1.5rem;
     }
 }
-/* --- Fin de los Estilos --- */
-/* =========================================
-   Fin de los Estilos para "El Faro"
-   ========================================= */
+
+/*Fin de los Estilos para "El Faro"*/
