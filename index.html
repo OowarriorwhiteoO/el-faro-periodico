@@ -9,6 +9,12 @@
   <body>
     <!-- Encabezado -->
     <header class="bg-header">
+      <!-- Reloj -->
+      <div class="container-time">
+        <label id="label-time"></label>
+      </div>
+      <script src="js/clock-time.js"></script>
+      <!-- Reloj - FIN -->
       <div class="text-center">
         <h1 id="titulo">Periódico "El Faro"</h1>
         <img
@@ -93,6 +99,7 @@
             energéticas
           </h3>
           <iframe
+            class="video-frame"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/gR9w9xLrz6E"
@@ -217,6 +224,28 @@
           </article>
         </div>
       </section>
+      <!-- Sección agregar noticia -->
+       <section id="formulario-nueva-noticia" class="bg-light-green">
+        <h2>Agregar noticia</h2>
+        <form class="formulario">
+          <label>
+            Título de la noticia:
+            <input type="text" placeholder="Insertar título">
+          </label>
+          <label>
+            Descripción de la noticia:
+            <input type="text" placeholder="Insertar descripción">
+          </label>
+          <label>
+            Sección de la noticia:
+            <select placeholder="Seleccionar sección">
+              <option value="general">Generales</option>
+              <option value="deportiva">Deportivas</option>
+              <option value="negocios">Negocios y Emprendimiento</option>
+            </select>
+          </label>
+        </form>
+       </section>
     </main>
 
     <!-- Pie de página -->
