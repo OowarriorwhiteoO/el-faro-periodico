@@ -15,8 +15,8 @@ document.getElementById('formulario-nueva-noticia').addEventListener('submit', f
       "category": category,
       "description": description,
       "date": new Date().toLocaleDateString(),
-      "img": "bci-emprendimiento.jpg",
-      "alt-img": "Mujeres presentando proyecto sostenible"
+      "img": "Logo1.jpeg",
+      "alt-img": "Esta noticia fue creada por el usuario."
     }) 
     //actualiza noticias en cache
     localStorage.setItem('noticias', JSON.stringify(noticiasCache))

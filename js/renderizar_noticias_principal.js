@@ -15,7 +15,7 @@ const generar_html_seccion_noticias = (section) => {
         </article>`
     }
     return `
-        <h2>${section.title}</h2>
+        <h2>${section.title} <span id="general-articles-number" class="tiny-text">${section.articles.length} articulo(s)</span></h2>
         <div class="articles">
         ${html_articulos}
         </div>
