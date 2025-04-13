@@ -38,7 +38,7 @@ body {
 
 .text-center {
     text-align: center; /* Reemplazo de <center> */
-    margin: 1rem 0;
+    /**margin: 1rem 0;**/
 }
 
 /*Menú Neumórfico*/
@@ -118,7 +118,10 @@ article img {
 
 /*Estilos de Tipografía*/
 h1, h2, h3, h4, h5 {
-    margin: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 h1 {
@@ -128,7 +131,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    /**margin-bottom: 1.5rem;**/
 }
 
 h3 {
@@ -137,7 +140,7 @@ h3 {
 }
 
 /*Multimedia y Podcast*/
-iframe {
+.video-frame {
     width: 100%;
     max-width: 560px;
     height: 315px;
@@ -190,5 +193,69 @@ audio {
         font-size: 1.5rem;
     }
 }
+
+.container-time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 25%;
+    gap: 12px;
+}
+@media (max-width: 425px) {
+    .formulario {
+         padding: 0 5%;
+     }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+    .formulario {
+         padding: 0 12%;
+     }
+}
+
+.formulario > label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.formulario > label > input,select,textarea {
+    height: 35px;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-top: 8px
+}
+
+.formulario > label > textarea {
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.formulario > .botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    padding: 0px 3%
+}
+
+.tiny-text {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gray;
+}
+
 
 /*Fin de los Estilos para "El Faro"*/

@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
   </head>
-  <body>
+  <body id="pagina-principal">
+    <!-- Define diccionario de noticias en memoria cache-->
+    <script src="js/noticias.js"></script>
     <!-- Encabezado -->
     <header class="bg-header">
+      <!-- Reloj -->
+      <div class="container-time">
+        <label id="label-time"></label>
+      </div>
+      <script src="js/clock-time.js"></script>
+      <!-- Reloj - FIN -->
       <div class="text-center">
         <h1 id="titulo">Periódico "El Faro"</h1>
         <img
@@ -29,60 +37,7 @@
 
     <!-- Sección de noticias generales -->
     <main>
-      <section id="noticias" class="articles-section">
-        <h2>Noticias Generales</h2>
-        <div class="articles">
-          <article>
-            <img
-              src="img/ucrania-rusia.jpg"
-              alt="Bandera de Ucrania y Rusia ondeando"
-            />
-            <h3>Internacional</h3>
-            <h2>
-              <a href="general.html"
-                >Ucrania y Rusia acuerdan un alto al fuego en sus
-                infraestructuras energéticas y en el Mar Negro</a
-              >
-            </h2>
-            <p>
-              Información sobre el acuerdo entre Ucrania y Rusia para un cese de
-              hostilidades en áreas específicas.
-            </p>
-          </article>
-          <article>
-            <img
-              src="img/terremoto.jpg"
-              alt="Edificios dañados por terremoto en Myanmar"
-            />
-            <h3>Internacional</h3>
-            <h2>
-              <a href="general.html"
-                >Noticias del terremoto en Myanmar y Tailandia</a
-              >
-            </h2>
-            <p>
-              Cobertura del terremoto de magnitud 7.2 que afectó a ambos países,
-              con reportes de daños y rescates.
-            </p>
-          </article>
-          <article>
-            <img
-              src="img/ghibli-ai.jpg"
-              alt="Imágenes generadas por IA al estilo Studio Ghibli"
-            />
-            <h3>Internet</h3>
-            <h2>
-              <a href="general.html"
-                >Imágenes virales al estilo Ghibli reavivan el debate sobre
-                derechos de autor</a
-              >
-            </h2>
-            <p>
-              Polémica por el uso de IA para recrear el estilo visual de
-              películas icónicas.
-            </p>
-          </article>
-        </div>
+      <section id="general" class="articles-section">
       </section>
 
       <!-- Sección multimedia -->
@@ -93,6 +48,7 @@
             energéticas
           </h3>
           <iframe
+            class="video-frame"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/gR9w9xLrz6E"
@@ -123,100 +79,66 @@
       </section>
 
       <!-- Sección deportes -->
-      <section id="deporte" class="bg-light-green">
-        <h2>Noticias Deportivas</h2>
-        <div class="articles">
-          <article>
-            <img
-              src="img/raphinha.jpg"
-              alt="Raphinha (Brasil) en partido contra Argentina"
-            />
-            <h3>Fútbol</h3>
-            <h2>
-              <a href="deportes.html"
-                >La "paliza" con la que amenazó Raphinha la propinó Argentina a
-                Brasil</a
-              >
-            </h2>
-            <p>
-              Argentina derrota 4-1 a Brasil en las eliminatorias mundialistas.
-            </p>
-          </article>
-          <article>
-            <img
-              src="img/fifa-caso.jpg"
-              alt="Joseph Blatter y Michel Platini en tribunal"
-            />
-            <h3>Fútbol</h3>
-            <h2>
-              <a href="deportes.html"
-                >Joseph Blatter y Michel Platini absueltos por tribunal suizo</a
-              >
-            </h2>
-            <p>Absueltos de cargos de corrupción en caso FIFA.</p>
-          </article>
-          <article>
-            <img
-              src="img/Aryna Sabalenka.jpg"
-              alt="Aryna Sabalenka levantando trofeo del Miami Open"
-            />
-            <h3>Tenis</h3>
-            <h2>
-              <a href="deportes.html"
-                >Sabalenka gana el Miami Open y consolida su liderazgo</a
-              >
-            </h2>
-            <p>Victoria en dos sets sobre Jessica Pegula.</p>
-          </article>
-        </div>
+      <section id="deportes" class="bg-light-green">
       </section>
 
       <!-- Sección negocios -->
       <section id="negocios" class="bg-beige">
-        <h2>Negocios y Emprendimientos</h2>
-        <div class="articles">
-          <article>
-            <img
-              src="img/bci-emprendimiento.jpg"
-              alt="Mujeres presentando proyecto sostenible"
-            />
-            <h3>Emprendimiento</h3>
-            <h2>
-              <a href="negocios.html"
-                >BCI lanza plan para emprendimiento femenino sostenible</a
-              >
-            </h2>
-            <p>
-              Programa con financiamiento y mentorías para proyectos verdes.
-            </p>
-          </article>
-          <article>
-            <img src="img/smart-me.jpg" alt="Scooter eléctrico de Smart Me" />
-            <h3>Emprendimiento</h3>
-            <h2>
-              <a href="negocios.html"
-                >Smart Me: Innovación en electromovilidad</a
-              >
-            </h2>
-            <p>Startup chilena revoluciona el transporte urbano.</p>
-          </article>
-          <article>
-            <img
-              src="img/fondo-comunitario.jpg"
-              alt="Grupo trabajando en proyecto comunitario"
-            />
-            <h3>Negocios</h3>
-            <h2>
-              <a href="negocios.html"
-                >Fondo concursable para proyectos colaborativos</a
-              >
-            </h2>
-            <p>
-              Hasta $10 millones de financiamiento para iniciativas sociales.
-            </p>
-          </article>
-        </div>
       </section>
+      <script src="js/renderizar_noticias_principal.js"></script>
+      <!-- Sección agregar noticia -->
+       <section id="nueva-noticia" class="bg-light-green">
+        <h2>Agregar noticia</h2>
+        <form id="formulario-nueva-noticia" class="formulario">
+          <label>
+            Sección de la noticia:
+            <select name="section" placeholder="Seleccionar sección">
+              <option value="general">Generales</option>
+              <option value="deportes">Deportivas</option>
+              <option value="negocios">Negocios y Emprendimiento</option>
+            </select>
+          </label>
+          <label>
+            Categoría de la noticia:
+            <input name="category" type="text" placeholder="Insertar Categoría">
+          </label>
+          <label>
+            Título de la noticia:
+            <input name="title" type="text" placeholder="Insertar título">
+          </label>
+          <label>
+            Descripción de la noticia:
+            <textarea name="description" type="text" placeholder="Insertar descripción"></textarea>
+          </label>
+          <div class="botones">
+            <button class="button">
+              Registrar
+            </button>
+          </div>
+        </form>
+        <script src="js/crear-noticias.js"></script>
+       </section>
+
+       <!-- Sección formulario de contacto -->
+       <section id="contacto" class="bg-beige">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto" class="formulario">
+          <label>
+            Nombre:
+            <input name="name" type="text" placeholder="Insertar Nombre">
+          </label>
+          <label>
+            Mensaje:
+            <textarea name="message" type="text" placeholder="Insertar mensaje"></textarea>
+          </label>
+          <div class="botones">
+            <button class="button">
+              Enviar
+            </button>
+          </div>
+        </form>
+        <script src="js/formulario-contacto.js"></script>
+       </section>
     </main>
 
     <!-- Pie de página -->

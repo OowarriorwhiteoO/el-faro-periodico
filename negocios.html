@@ -9,8 +9,16 @@
   <body>
     <!-- Encabezado -->
     <header class="bg-header">
+      <!-- Reloj -->
+      <div class="container-time">
+        <label id="label-time"></label>
+      </div>
+      <script src="js/clock-time.js"></script>
+      <!-- Reloj - FIN -->
       <div class="text-center">
-        <h1>Negocios y Emprendimientos - El Faro</h1>
+        <h1>Negocios y Emprendimientos - El Faro <span id="negocios-articles-number" class="tiny-text"></span></h1>
+        <!--Renderiza cantidad de articulos-->
+        <script src="js/render-number-articles.js"></script>
         <img
           src="img/Logo1.jpeg"
           width="100"
@@ -28,88 +36,10 @@
     </header>
 
     <!-- Contenido principal -->
-    <main class="articles-container">
-      <!-- Artículo 1: BCI y emprendimiento femenino -->
-      <article>
-        <div class="text-center">
-          <h2>
-            BCI lanza plan para potenciar el emprendimiento femenino enfocado en
-            sostenibilidad
-          </h2>
-          <p><strong>Fecha:</strong> Marzo 13, 2025</p>
-          <img
-            src="img/bci-emprendimiento.jpg"
-            alt="Mujeres presentando proyecto empresarial sostenible"
-            class="article-img"
-          />
-          <p>
-            El Banco de Crédito e Inversiones (BCI) impulsa proyectos liderados
-            por mujeres con impacto ambiental positivo.
-          </p>
-        </div>
-        <h3>Características del programa:</h3>
-        <ul>
-          <li>Financiamiento preferencial para iniciativas verdes</li>
-          <li>Mentorías en gestión empresarial</li>
-          <li>Red de apoyo entre emprendedoras</li>
-          <li>Talleres sobre sostenibilidad</li>
-        </ul>
-      </article>
-
-      <hr />
-
-      <!-- Artículo 2: Smart Me y electromovilidad -->
-      <article>
-        <div class="text-center">
-          <h2>
-            Smart Me: el emprendimiento que apuesta por la electromovilidad
-          </h2>
-          <p><strong>Fecha:</strong> Abril 9, 2025</p>
-          <img
-            src="img/smart-me.jpg"
-            alt="Scooter eléctrico de Smart Me en ciudad"
-            class="article-img"
-          />
-          <p>
-            Startup chilena revoluciona el transporte urbano con vehículos
-            eléctricos asequibles y estaciones de carga solar.
-          </p>
-        </div>
-        <h3>Innovaciones clave:</h3>
-        <ul>
-          <li>Scooters eléctricos de bajo costo</li>
-          <li>Sistema de compartir vehículos</li>
-          <li>Tecnología de geolocalización</li>
-          <li>Expansión a Latinoamérica en 2026</li>
-        </ul>
-      </article>
-
-      <hr />
-
-      <!-- Artículo 3: Fondo comunitario -->
-      <article>
-        <div class="text-center">
-          <h2>Lanzan fondo concursable para proyectos colaborativos</h2>
-          <p><strong>Fecha:</strong> Mayo 6, 2025</p>
-          <img
-            src="img/fondo-comunitario.jpg"
-            alt="Grupo de personas planificando proyecto comunitario"
-            class="article-img"
-          />
-          <p>
-            Iniciativa financiará hasta $10 millones por proyecto para impulsar
-            el desarrollo local sostenible.
-          </p>
-        </div>
-        <h3>Detalles del fondo:</h3>
-        <ul>
-          <li>Prioridad a proyectos sociales y ecológicos</li>
-          <li>Apoyo técnico durante la ejecución</li>
-          <li>Postulaciones abiertas hasta junio 2025</li>
-          <li>50 proyectos beneficiados a nivel nacional</li>
-        </ul>
-      </article>
+    <main class="articles-container" id="articles-container-negocios">
+      
     </main>
+    <script src="js/renderizar_paginas_noticias.js"></script>
 
     <!-- Pie de página -->
     <footer class="bg-footer">

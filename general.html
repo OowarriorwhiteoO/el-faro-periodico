@@ -9,8 +9,18 @@
   <body>
     <!-- Encabezado -->
     <header class="bg-header">
+      
+      <!-- Reloj -->
+      <div class="container-time">
+        <label id="label-time"></label>
+      </div>
+      <script src="js/clock-time.js"></script>
+      <!-- Reloj - FIN -->
+
       <div class="text-center">
-        <h1>Noticias Generales - El Faro</h1>
+        <h1>Noticias Generales - El Faro <span id="general-articles-number" class="tiny-text"></span></h1>
+        <!--Renderiza cantidad de articulos-->
+        <script src="js/render-number-articles.js"></script>
         <img
           src="img/Logo1.jpeg"
           width="100"
@@ -28,96 +38,9 @@
     </header>
 
     <!-- Contenido principal -->
-    <main class="articles-container">
-      <!-- Artículo 1: Acuerdo Ucrania-Rusia -->
-      <article>
-        <div class="text-center">
-          <h2>
-            Ucrania y Rusia acuerdan un alto al fuego en sus infraestructuras
-            energéticas y en el Mar Negro
-          </h2>
-          <p><strong>Fecha:</strong> Marzo 25, 2025</p>
-          <img
-            src="img/ucrania-rusia.jpg"
-            alt="Representantes de Ucrania y Rusia firmando acuerdo"
-            class="article-img"
-          />
-          <p>
-            En un histórico acuerdo mediado por las Naciones Unidas, Ucrania y
-            Rusia han llegado a un entendimiento para establecer un alto el
-            fuego específicamente en áreas que afectan infraestructuras
-            energéticas críticas.
-          </p>
-        </div>
-        <h3>Puntos clave del acuerdo:</h3>
-        <ul>
-          <li>
-            Cese inmediato de ataques a instalaciones energéticas en ambos
-            países
-          </li>
-          <li>Corredor seguro en el Mar Negro para transporte de granos</li>
-          <li>Supervisión internacional del cumplimiento</li>
-          <li>Mecanismos de verificación conjunta</li>
-        </ul>
-      </article>
-
-      <hr />
-
-      <!-- Artículo 2: Terremoto en Myanmar y Tailandia -->
-      <article>
-        <div class="text-center">
-          <h2>Noticias del terremoto en Myanmar y Tailandia</h2>
-          <p><strong>Fecha:</strong> Marzo 29, 2025</p>
-          <img
-            src="img/terremoto.jpg"
-            alt="Edificios destruidos por terremoto en zona fronteriza"
-            class="article-img"
-          />
-          <p>
-            Un terremoto de magnitud 7.2 sacudió la región fronteriza entre
-            Myanmar y Tailandia, causando daños significativos y movilizando
-            equipos de rescate internacionales.
-          </p>
-        </div>
-        <h3>Detalles del suceso:</h3>
-        <ul>
-          <li>Epicentro a 50 km de la frontera</li>
-          <li>Más de 100 réplicas en 24 horas</li>
-          <li>Centros de ayuda establecidos en ambos países</li>
-          <li>Alerta por posibles réplicas intensas</li>
-        </ul>
-      </article>
-
-      <hr />
-
-      <!-- Artículo 3: Debate sobre derechos de autor e IA -->
-      <article>
-        <div class="text-center">
-          <h2>
-            Imágenes virales al estilo Ghibli reavivan debate sobre derechos de
-            autor
-          </h2>
-          <p><strong>Fecha:</strong> Marzo 30, 2025</p>
-          <img
-            src="img/ghibli-ai.jpg"
-            alt="Imagen generada por IA imitando el estilo de Studio Ghibli"
-            class="article-img"
-          />
-          <p>
-            Imágenes generadas por inteligencia artificial que replican el
-            estilo de Studio Ghibli han generado un intenso debate sobre
-            propiedad intelectual en la era digital.
-          </p>
-        </div>
-        <h3>Aspectos destacados:</h3>
-        <ul>
-          <li>IA entrenada con obras de Studio Ghibli</li>
-          <li>Posibles acciones legales del estudio japonés</li>
-          <li>Debate artístico sobre inspiración vs. plagio</li>
-          <li>Análisis de expertos en propiedad intelectual</li>
-        </ul>
-      </article>
+    <main class="articles-container" id="articles-container-general">
     </main>
+    <script src="js/renderizar_paginas_noticias.js"></script>
 
     <!-- Pie de página -->
     <footer class="bg-footer">
