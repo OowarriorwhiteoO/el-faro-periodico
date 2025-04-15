@@ -97,6 +97,8 @@ article:hover {
     transform: translateY(-5px);
     text-decoration: none; /* Elimina subrayado en hover */
 }
+article:hover a {
+    color: white;
 
 /* Nuevas reglas para enlaces dentro de artículos */
 article a {
