@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Estilos Personalizados Adicionales - El Faro Bootstrap
+   ========================================================================== */
+
+/* --- Efecto Hover para Tarjetas/Artículos de Noticias --- */
+
+/* Clase base para la tarjeta/artículo de noticia */
+.news-card {
+    transition: all 0.3s ease-in-out; /* Transición suave para todos los cambios */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+/* Estilos al pasar el cursor sobre la tarjeta/artículo */
+.news-card:hover {
+    background-color: #212529 !important; /* Fondo oscuro (Bootstrap dark color) */
+    color: #f8f9fa !important;           /* Texto claro (Bootstrap light color) */
+    transform: translateY(-6px);         /* Efecto de elevación un poco más pronunciado */
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2) !important; /* Sombra más notoria */
+}
+
+/* Ajustar colores de elementos internos específicos en hover */
+.news-card:hover .card-title, /* Título de la tarjeta */
+.news-card:hover .card-text, /* Texto de la tarjeta */
+.news-card:hover h2,        /* Título del artículo (en páginas de sección) */
+.news-card:hover p,         /* Párrafos del artículo (en páginas de sección) */
+.news-card:hover .small,    /* Texto small si existe */
+.news-card:hover .lead {    /* Texto lead si existe */
+    color: #f8f9fa !important; /* Mismo color claro */
+}
+
+/* Ajustar colores de badges en hover */
+.news-card:hover .badge {
+    background-color: #f8f9fa !important; /* Fondo claro */
+    color: #212529 !important;           /* Texto oscuro */
+    border: 1px solid #dee2e6;         /* Borde sutil (opcional) */
+}
+
+/* Ajustar botón dentro de la tarjeta en hover */
+.news-card:hover .btn-outline-primary { /* botón outline */
+    background-color: #f8f9fa;          /* Fondo claro */
+    color: #0d6efd;                     /* Color primario de Bootstrap para el texto */
+    border-color: #f8f9fa;              /* Borde claro */
+}
+.news-card:hover .btn-primary { /* Específico para botón primary (si lo usaras) */
+    background-color: #f8f9fa;
+    color: #0d6efd;
+    border-color: #f8f9fa;
+}
+
+
+/* Asegurar que la imagen no se vea afectada directamente por el color de texto */
+.news-card:hover img {
+    opacity: 0.95; /* Levemente opaca para integrar mejor (opcional) */
+}
+
+.news-card:hover a {
+    text-decoration: none;
+}
+

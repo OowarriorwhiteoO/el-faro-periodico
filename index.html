@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Faro - Noticias</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <script src="js/noticias.js"></script>
+  </head>
+  <body>
+    <div
+      class="alert alert-info alert-dismissible fade show rounded-0 mb-0 text-center"
+      role="alert"
+    >
+      <strong>Aviso Importante:</strong> ¡Estrenamos nuevo diseño con más
+      secciones!
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <header class="container-fluid bg-light pt-2 shadow-sm">
+      <div class="container text-end small">
+        <i class="fas fa-clock me-1"></i><label id="label-time"></label>
+      </div>
+
+      <div class="container text-center py-3">
+        <img
+          src="assets/img/Logo1.jpeg"
+          width="150"
+          alt="Logo de El Faro: faro sobre acantilado"
+          class="logo img-fluid mb-2"
+        />
+        <h1 id="titulo" class="display-4">Periódico "El Faro"</h1>
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary border-top border-bottom"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/general.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/nacional.html">Nacional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/tecnologia.html">Tecnología</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/deportes.html">Deportes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/negocios.html">Negocios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Más Secciones
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#multimedia">Multimedia</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#podcast">Podcast</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-bs-toggle="collapse"
+                      href="#collapseContacto"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseContacto"
+                      >Contacto</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="carouselNoticias"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselNoticias"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Noticia 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselNoticias"
+          data-bs-slide-to="1"
+          aria-label="Noticia 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselNoticias"
+          data-bs-slide-to="2"
+          aria-label="Noticia 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="assets/img/nacional_ataque_biobio.jpg"
+            class="d-block w-100"
+            alt="Atentados en Biobío"
+            style="max-height: 500px; object-fit: cover"
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded"
+          >
+            <h5>Gobierno se querellará por Ley Antiterrorista</h5>
+            <p>Tras atentados incendiarios en Biobío y Contulmo.</p>
+            <a
+              href="html/nacional.html#article-nacional-0"
+              class="btn btn-primary btn-sm"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="assets/img/nacional_matthei_primarias.jpg"
+            class="d-block w-100"
+            alt="Evelyn Matthei"
+            style="max-height: 500px; object-fit: cover"
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded"
+          >
+            <h5>Matthei confirma que Chile Vamos no realizará primarias</h5>
+            <p>Candidata irá directo a primera vuelta presidencial.</p>
+            <a
+              href="html/nacional.html#article-nacional-1"
+              class="btn btn-primary btn-sm"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="assets/img/tec_openai_o3.jpg"
+            class="d-block w-100"
+            alt="OpenAI logo"
+            style="max-height: 500px; object-fit: cover"
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded"
+          >
+            <h5>OpenAI lanza O3 y O4-mini</h5>
+            <p>
+              Nuevos modelos de IA con capacidades de razonamiento mejoradas.
+            </p>
+            <a
+              href="html/tecnologia.html#article-tecnologia-0"
+              class="btn btn-primary btn-sm"
+              >Leer más</a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselNoticias"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselNoticias"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </section>
+
+    <main class="container mt-4">
+      <section id="contacto" class="mb-5 p-4 bg-light rounded shadow-sm border">
+        <div class="text-center">
+          <button
+            class="btn btn-outline-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseContacto"
+            aria-expanded="false"
+            aria-controls="collapseContacto"
+          >
+            <i class="fas fa-envelope me-1"></i> Contáctanos / Ocultar
+            Formulario
+          </button>
+        </div>
+        <div class="collapse mt-4" id="collapseContacto">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              <form id="formulario-contacto">
+                <div class="mb-3">
+                  <label for="contact-name" class="form-label">Nombre:</label>
+                  <input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    class="form-control form-control-sm"
+                    placeholder="Tu Nombre"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contact-message" class="form-label"
+                    >Mensaje:</label
+                  >
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-control form-control-sm"
+                    rows="3"
+                    placeholder="Escribe tu mensaje aquí"
+                  ></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="submit" class="btn btn-primary btn-sm">
+                    Enviar Mensaje
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="general" class="articles-section mb-5">
+        <h2 class="border-bottom pb-2 mb-4">
+          Noticias Generales
+          <span
+            id="general-articles-number"
+            class="badge bg-secondary fw-normal"
+          ></span>
+        </h2>
+        <div class="row g-4" id="general-articles-container">
+          <div class="col-md-6 col-lg-8 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-6 col-lg-4 placeholder-glow">
+            <div class="placeholder card h-100 mb-3"></div>
+            <div class="placeholder card h-100"></div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="html/general.html" class="btn btn-outline-primary"
+            >Ver todas las Noticias Generales</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="nacional"
+        class="articles-section my-5 bg-light p-4 rounded border"
+      >
+        <h2 class="border-bottom pb-2 mb-4">
+          Nacional (Chile)
+          <span
+            id="nacional-articles-number"
+            class="badge bg-secondary fw-normal"
+          ></span>
+        </h2>
+        <div class="row g-4" id="nacional-articles-container">
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="html/nacional.html" class="btn btn-outline-primary"
+            >Ver todas las Noticias Nacionales</a
+          >
+        </div>
+      </section>
+
+      <section id="tecnologia" class="articles-section my-5">
+        <h2 class="border-bottom pb-2 mb-4">
+          Tecnología
+          <span
+            id="tecnologia-articles-number"
+            class="badge bg-secondary fw-normal"
+          ></span>
+        </h2>
+        <div class="row g-4" id="tecnologia-articles-container">
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="html/tecnologia.html" class="btn btn-outline-primary"
+            >Ver todas las Noticias de Tecnología</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="multimedia"
+        class="multimedia my-5 p-4 bg-light rounded border"
+      >
+        <div class="text-center">
+          <h3 class="mb-3">GUERRA | Rusia y Ucrania pactan alto el fuego</h3>
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/gR9w9xLrz6E"
+              title="Video sobre acuerdo Rusia-Ucrania"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="podcast" class="podcast my-5 text-center">
+        <img
+          src="assets/img/podcastimages.jpg"
+          width="100"
+          alt="Micrófono y auriculares: logo podcast"
+          class="mb-2 rounded-circle"
+        />
+        <h3 class="h5">
+          Podcast: El rol de la ciencia en la era de las fake news
+        </h3>
+        <audio controls class="mt-2 w-75">
+          <source src="assets/audio/Cap. 1 .mp3" type="audio/mpeg" />
+          Tu navegador no soporta reproducción de audio.
+        </audio>
+      </section>
+
+      <section id="deportes" class="articles-section my-5">
+        <h2 class="border-bottom pb-2 mb-4">
+          Deportes
+          <span
+            id="deportes-articles-number"
+            class="badge bg-secondary fw-normal"
+          ></span>
+        </h2>
+        <div class="row g-4" id="deportes-articles-container">
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="html/deportes.html" class="btn btn-outline-primary"
+            >Ver todas las Noticias de Deportes</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="negocios"
+        class="articles-section my-5 bg-light p-4 rounded border"
+      >
+        <h2 class="border-bottom pb-2 mb-4">
+          Negocios y Emprendimiento
+          <span
+            id="negocios-articles-number"
+            class="badge bg-secondary fw-normal"
+          ></span>
+        </h2>
+        <div class="row g-4" id="negocios-articles-container">
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+          <div class="col-md-4 placeholder-glow">
+            <div class="placeholder card h-100"></div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a href="html/negocios.html" class="btn btn-outline-primary"
+            >Ver todas las Noticias de Negocios</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="nueva-noticia"
+        class="my-5 p-4 bg-light rounded shadow-sm border"
+      >
+        <h2 class="text-center mb-4">Agregar Noticia</h2>
+        <form
+          id="formulario-nueva-noticia"
+          class="row g-3 justify-content-center"
+        >
+          <div class="col-md-4">
+            <label for="news-section" class="form-label">Sección:</label>
+            <select id="news-section" name="section" class="form-select">
+              <option value="general" selected>Generales</option>
+              <option value="nacional">Nacional</option>
+              <option value="tecnologia">Tecnología</option>
+              <option value="deportes">Deportivas</option>
+              <option value="negocios">Negocios y Emprendimiento</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="news-category" class="form-label">Categoría:</label>
+            <input
+              id="news-category"
+              name="category"
+              type="text"
+              class="form-control"
+              placeholder="Ej: Política, IA"
+            />
+          </div>
+          <div class="col-md-8">
+            <label for="news-title" class="form-label">Título:</label>
+            <input
+              id="news-title"
+              name="title"
+              type="text"
+              class="form-control"
+              placeholder="Título de la noticia"
+            />
+          </div>
+          <div class="col-md-8">
+            <label for="news-description" class="form-label"
+              >Descripción:</label
+            >
+            <textarea
+              id="news-description"
+              name="description"
+              class="form-control"
+              rows="3"
+              placeholder="Descripción breve"
+            ></textarea>
+          </div>
+          <div class="col-md-8 text-end">
+            <button type="submit" class="btn btn-success">
+              Registrar Noticia
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <a href="index.html"
+              ><img
+                src="assets/img/Logo1.jpeg"
+                width="80"
+                class="logo mb-3 rounded"
+                alt="Logo El Faro Footer"
+            /></a>
+            <p class="text-white-50">Periódico El Faro. Mantente informado.</p>
+            <p class="small text-white-50">
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              El Faro. Todos los derechos reservados.
+            </p>
+          </div>
+
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase mb-3 text-warning small">Secciones</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link p-0 text-white-50"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="html/general.html" class="nav-link p-0 text-white-50"
+                  >Noticias</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="html/nacional.html" class="nav-link p-0 text-white-50"
+                  >Nacional</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="html/tecnologia.html"
+                  class="nav-link p-0 text-white-50"
+                  >Tecnología</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="html/deportes.html" class="nav-link p-0 text-white-50"
+                  >Deportes</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="html/negocios.html" class="nav-link p-0 text-white-50"
+                  >Negocios</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase mb-3 text-warning small">
+              Información y Contacto
+            </h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Acerca de</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="nav-link p-0 text-white-50"
+                  data-bs-toggle="collapse"
+                  href="#collapseContacto"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseContacto"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Publicidad</a>
+              </li>
+            </ul>
+            <div class="mt-3">
+              <p class="small text-white-50 mb-1">
+                <i class="fas fa-home me-2"></i> Maipú, Santiago, Chile
+              </p>
+              <p class="small text-white-50 mb-1">
+                <i class="fas fa-envelope me-2"></i> contacto@elfaro.cl
+              </p>
+              <p class="small text-white-50">
+                <i class="fas fa-phone me-2"></i> +56 9 3333 4444
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-3 text-warning small">Políticas</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Política de Privacidad</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Términos de Uso</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Política de Cookies</a
+                >
+              </li>
+            </ul>
+            <div class="mt-4">
+              <h6 class="text-uppercase mb-2 text-warning small">Síguenos</h6>
+              <a
+                href="#"
+                class="text-white me-2"
+                style="text-decoration: none; font-size: 1.2rem"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="text-white me-2"
+                style="text-decoration: none; font-size: 1.2rem"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="text-white me-2"
+                style="text-decoration: none; font-size: 1.2rem"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-white"
+                style="text-decoration: none; font-size: 1.2rem"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <button
+              class="btn btn-outline-warning btn-sm mt-4 w-100"
+              onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            >
+              <i class="fas fa-arrow-up me-1"></i> Ir Arriba
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/clock-time.js"></script>
+    <script src="js/formulario-contacto.js"></script>
+    <script src="js/crear-noticias.js"></script>
+    <script src="js/render-number-articles.js"></script>
+    <script src="js/renderizar_noticias_principal.js"></script>
+  </body>
+</html>
