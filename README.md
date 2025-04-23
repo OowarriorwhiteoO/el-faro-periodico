@@ -36,35 +36,4 @@ Este proyecto corresponde al rediseño del sitio web del periódico "El Faro", d
 * Bootstrap 5.3
 * Font Awesome (para iconos)
 
-## Estructura del Proyecto
 
-el-faro-bootstrap/
-│
-├── index.html
-│
-├── html/
-│   ├── general.html
-│   ├── nacional.html
-│   ├── tecnologia.html
-│   ├── deportes.html
-│   └── negocios.html
-│
-├── css/
-│   └── custom.css
-│
-├── js/
-│   ├── clock-time.js
-│   ├── crear-noticias.js
-│   ├── formulario-contacto.js
-│   ├── noticias.js
-│   ├── render-number-articles.js
-│   ├── renderizar_noticias_principal.js
-│   └── renderizar_paginas_noticias.js
-│
-├── assets/
-│   ├── img/
-│   │   └── (imágenes...)
-│   └── audio/
-│       └── (archivos de audio...)
-│
-└── README.md
